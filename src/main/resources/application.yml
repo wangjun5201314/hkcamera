@@ -1,0 +1,40 @@
+spring:
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+# 开发环境配置
+server:
+  # 服务器的HTTP端口，默认为8080
+  port: 8081
+  servlet:
+    # 应用的访问路径
+    context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+    # tomcat最大线程数，默认为200
+    max-threads: 800
+    # Tomcat启动初始化的线程数，默认值25
+    min-spare-threads: 30
+
+
+minio:
+#  prjNo: "P00012"
+  url: https://files.dev.ihgkj.com
+  accessKey: 8SLMH1P6WHQFN0OJJ7WI
+  secretKey: tD+TuVE4mWjgX9+SZGstaQVQzZroyB93n8f6JyiW
+  bucket: jgpt
+  nginxTag: files
+
+
+#signin:
+#  ip: 192.168.110.238
+#  port: 8000
+#  username: admin
+#  password: abc12345
+#  channelNumber: 33
+
